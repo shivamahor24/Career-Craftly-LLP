@@ -6,6 +6,7 @@ import {
     CheckCircle, Star, ChevronRight, Zap, Award, BarChart3, Briefcase, Linkedin
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import heroDashboardImg from '../assets/images/hero-dashboard.jpg';
 
 /* ─── Reusable fade-in-up wrapper ─── */
 const FadeIn = ({ children, delay = 0, className = '' }) => {
@@ -125,67 +126,8 @@ const Home = () => {
                         className="relative mx-auto max-w-5xl"
                     >
                         {/* Main Dashboard UI Mockup */}
-                        <div className="relative rounded-2xl md:rounded-[2rem] bg-white border border-gray-200/60 shadow-2xl overflow-hidden z-10 p-2 bg-gradient-to-b from-gray-50 to-white">
-                            <div className="rounded-xl md:rounded-[1.5rem] overflow-hidden border border-gray-100 bg-white shadow-inner flex flex-col h-[400px] md:h-[600px]">
-                                {/* Mockup Header */}
-                                <div className="h-12 border-b border-gray-100 flex items-center px-4 gap-3 bg-gray-50/50">
-                                    <div className="flex gap-1.5">
-                                        <div className="w-3 h-3 rounded-full bg-red-400" />
-                                        <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                                        <div className="w-3 h-3 rounded-full bg-green-400" />
-                                    </div>
-                                    <div className="ml-4 h-6 w-48 bg-white rounded-md border border-gray-200 flex items-center px-2">
-                                        <div className="w-3 h-3 text-gray-300"><Globe size={12}/></div>
-                                    </div>
-                                </div>
-                                {/* Mockup Content Area (Existing Product Concept) */}
-                                <div className="flex flex-1 overflow-hidden">
-                                    {/* Sidebar */}
-                                    <div className="w-48 md:w-64 border-r border-gray-100 p-4 hidden sm:block bg-gray-50/30">
-                                        <div className="flex items-center gap-2 mb-8">
-                                            <div className="w-6 h-6 rounded bg-blue-600 flex items-center justify-center">
-                                                <Sparkles size={12} className="text-white"/>
-                                            </div>
-                                            <span className="font-bold text-sm">Dashboard</span>
-                                        </div>
-                                        <div className="space-y-2">
-                                            {['AI Analytics', 'Career Profile', 'Projects', 'Marketing Agents', 'Settings'].map((item, i) => (
-                                                <div key={i} className={`h-8 rounded-lg px-3 flex items-center text-xs font-medium ${i === 0 ? 'bg-white shadow-sm border border-gray-100 text-blue-600' : 'text-gray-500'}`}>
-                                                    {item}
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    {/* Main Area */}
-                                    <div className="flex-1 p-6 md:p-8 bg-slate-50/50">
-                                        <div className="flex justify-between items-end mb-6">
-                                            <div>
-                                                <div className="text-xl md:text-2xl font-bold text-gray-900 mb-1">Project Growth</div>
-                                                <div className="text-sm text-gray-500">Real-Time Performance Insights</div>
-                                            </div>
-                                            <div className="h-8 px-3 rounded-lg bg-blue-50 text-blue-600 flex items-center text-xs font-bold border border-blue-100">
-                                                Last 30 Days
-                                            </div>
-                                        </div>
-                                        {/* Chart Placeholder */}
-                                        <div className="h-40 md:h-64 w-full bg-white rounded-xl border border-gray-100 shadow-sm p-4 flex items-end gap-2 md:gap-4 relative overflow-hidden">
-                                            {/* Decorative Chart Bars */}
-                                            <div className="absolute inset-0 bg-gradient-to-t from-blue-50/50 to-transparent pointer-events-none" />
-                                            {[40, 25, 60, 45, 80, 55, 95].map((h, i) => (
-                                                <motion.div 
-                                                    key={i}
-                                                    initial={{ height: 0 }}
-                                                    animate={{ height: `${h}%` }}
-                                                    transition={{ delay: 1 + (i * 0.1), duration: 0.8 }}
-                                                    className="flex-1 bg-blue-100 rounded-t-md relative group"
-                                                >
-                                                    <div className="absolute bottom-0 w-full bg-blue-500 rounded-t-md transition-all group-hover:bg-blue-600" style={{ height: '70%' }} />
-                                                </motion.div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="relative rounded-2xl md:rounded-[2rem] bg-white border border-gray-200/60 shadow-2xl overflow-hidden z-10 flex items-center justify-center bg-gray-50 aspect-video md:aspect-[16/10] lg:aspect-[16/9]">
+                            <img src={heroDashboardImg} alt="CareerCraftly Dashboard Mockup" className="w-full h-full object-cover" />
                         </div>
 
                         {/* Floating Cards (Existing Data) */}
