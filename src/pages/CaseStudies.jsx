@@ -33,68 +33,52 @@ const CaseStudies = () => {
 
     const caseStudies = [
         {
-            client: 'Priya Sharma',
-            role: 'Software Engineer',
-            company: 'TCS',
-            title: 'How Priya Landed Her Dream Tech Role in 6 Weeks',
-            category: 'Career Coaching',
+            client: 'Multi-specialty Care',
+            role: 'Healthcare',
+            company: 'SaaS Platform',
+            title: 'Modernizing Patient Care with Cloud SaaS',
+            category: 'Cloud Engineering',
             date: 'March 2026',
             metrics: [
-                { label: 'Time to Hire', value: '6 Weeks' },
-                { label: 'Salary Increase', value: '45%' }
+                { label: 'Compliance', value: '100%' },
+                { label: 'Platform Scale', value: 'National' }
             ],
-            description: 'By leveraging CareerCraftly’s AI resume optimization and 1-on-1 interview coaching, Priya transformed her generic profile into a highly targeted narrative that caught the attention of top-tier tech recruiters.',
+            description: 'Transitioned outdated, fragmented healthcare workflows into a secure, scalable cloud environment. Built a unified data platform using FHIR standards and launched a mobile-first patient portal with telemedicine integration.',
             color: 'from-blue-500 to-cyan-400',
             bgLight: 'bg-blue-50',
             textColor: 'text-blue-600'
         },
         {
-            client: 'Rahul Mehta',
-            role: 'Founder',
-            company: 'TechStart Labs',
-            title: 'Scaling Operations: Saving 40+ Hours Weekly with Custom AI Agents',
+            client: 'FinTech Firm',
+            role: 'Financial',
+            company: 'Services',
+            title: 'Automating Financial Data Workflows with AI',
             category: 'AI Automation',
             date: 'February 2026',
             metrics: [
-                { label: 'Time Saved', value: '40h/wk' },
-                { label: 'Efficiency', value: '3x Boost' }
+                { label: 'Manual Work', value: '-85%' },
+                { label: 'Processing Speed', value: '10x Boost' }
             ],
-            description: 'TechStart Labs was struggling with operational bottlenecks. We designed and integrated intelligent AI agents into their workflow, automating repetitive tasks and freeing up the founding team to focus on strategic growth.',
+            description: 'The client struggled with heavy manual workloads and inefficient financial data processing. We designed a custom AI-driven automation system for end-to-end data processing and intelligent workflow automation.',
             color: 'from-purple-500 to-indigo-500',
             bgLight: 'bg-purple-50',
             textColor: 'text-purple-600'
         },
         {
-            client: 'Ananya Patel',
-            role: 'Marketing Manager',
-            company: 'GrowthX Solutions',
-            title: 'Doubling Inbound Leads Through Data-Driven Marketing Systems',
-            category: 'Digital Strategy',
+            client: 'Online Retailer',
+            role: 'E-Commerce',
+            company: 'Platform',
+            title: 'Boosting Revenue via AI Recommendation Engines',
+            category: 'AI Transformation',
             date: 'January 2026',
             metrics: [
-                { label: 'Lead Volume', value: '+210%' },
-                { label: 'CAC', value: '-35%' }
+                { label: 'Conversion Rate', value: '+40%' },
+                { label: 'User Engagement', value: '+60%' }
             ],
-            description: 'CareerCraftly completely revamped GrowthX’s digital presence and marketing funnel. By implementing robust SEO strategies and automated lead nurturing, Ananya was able to double their qualified leads within a single quarter.',
+            description: 'Faced with low conversion rates and static pricing, we deployed personalized AI recommendation engines and dynamic pricing mechanics tailored to real-time user behavior, significantly optimizing the customer journey.',
             color: 'from-emerald-500 to-teal-400',
             bgLight: 'bg-emerald-50',
             textColor: 'text-emerald-600'
-        },
-        {
-            client: 'Vikram Singh',
-            role: 'Product Designer',
-            company: 'Creative Studio',
-            title: 'Transitioning from Freelance to Senior Product Designer at a Unicorn',
-            category: 'Personal Branding',
-            date: 'December 2025',
-            metrics: [
-                { label: 'Profile Views', value: '+400%' },
-                { label: 'Interviews', value: '12' }
-            ],
-            description: 'Vikram had a great portfolio but lacked visibility. We optimized his LinkedIn presence, rebuilt his personal portfolio site using modern tech, and executed a targeted networking strategy that led to multiple unicorn offers.',
-            color: 'from-amber-500 to-orange-400',
-            bgLight: 'bg-amber-50',
-            textColor: 'text-amber-600'
         }
     ];
 
