@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import EventsGallery from './pages/EventsGallery';
 import NotFound from './pages/NotFound';
+import CaseStudies from './pages/CaseStudies';
 
 import LoadingScreen from './components/ui/LoadingScreen';
 import FloatingContactButton from './components/ui/FloatingContactButton';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/events" element={<EventsGallery />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
